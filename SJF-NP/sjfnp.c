@@ -1,7 +1,10 @@
 #include <stdio.h>
 
 int main() {
-    int n = 4;
+    int n;
+    printf("Enter number of processes: ");
+    scanf("%d", &n);
+
     int pid[4], at[4], bt[4], ct[4], tat[4], wt[4];
     int completed[4] = {0};
     int current_time = 0, done = 0;
